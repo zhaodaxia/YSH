@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dl"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sc_02" >
+
+        <Button
+            android:id="@+id/toptext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:text="找回密码"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:id="@+id/fanhui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|left" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/gh_03" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/sc_02" >
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/dll_15" />
+
+        <EditText
+            android:id="@+id/ed_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/logo1"
+            android:background="@null"
+            android:hint="请输入新密码(不少于6位)"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/sc_02" >
+
+        <ImageView
+            android:id="@+id/logo1_iv"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/dll_15" />
+
+        <EditText
+            android:id="@+id/ed_login_phone_sure"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/logo1_iv"
+            android:background="@null"
+            android:hint="请确认密码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/wjipsw_one"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dll_18"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

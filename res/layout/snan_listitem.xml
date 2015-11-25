@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fj_19" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imgtoux"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/toptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/imgtoux"
+                android:gravity="center|left"
+                android:text="桑拿会所(月亮湾)"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/dizhiname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_ratingbar"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/dizhi"
+                android:gravity="center|left"
+                android:text="青浦区虹桥路33号"
+                android:textColor="#bbbec3"
+                android:textSize="12dp" />
+
+            <RatingBar
+                android:id="@+id/room_ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/toptext"
+                android:layout_below="@+id/toptext"
+                android:layout_marginTop="15dp"
+                android:isIndicator="true"
+                android:max="25"
+                android:rating="5"
+                android:stepSize="0.2" />
+
+            <ImageView
+                android:id="@+id/dizhi"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignLeft="@+id/toptext"
+                android:layout_alignTop="@+id/dizhiname"
+                android:src="@drawable/atter" />
+
+            <TextView
+                android:id="@+id/jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/jiage_1"
+                android:layout_alignBottom="@+id/jiage_1"
+                android:layout_toLeftOf="@+id/jiage_2"
+                android:text="120" />
+
+            <TextView
+                android:id="@+id/jiage_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/jiage"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="起" />
+
+            <TextView
+                android:id="@+id/jiage_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/room_ratingbar"
+                android:layout_toLeftOf="@+id/jiage"
+                android:text="￥"
+                android:textColor="#FB02A1"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignTop="@+id/jiage_1"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/jiage_1"
+                android:src="@drawable/sm_19" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

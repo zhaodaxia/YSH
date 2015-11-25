@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ysh"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name="com.example.global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.example.sp.SpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.Flou.FlouActivity" >
+        </activity>
+        <activity android:name="com.example.Log.RegistrActivity" >
+        </activity>
+        <activity android:name="com.example.Log.WjipasswordActivity" >
+        </activity>
+        <activity android:name="com.example.Log.Wjipassword_oneActivity" >
+        </activity>
+        <activity android:name="com.example.We.ZiliaoActivity" >
+        </activity>
+        <activity android:name="com.example.We.XgaiMimaActivity" >
+        </activity>
+        <activity android:name="com.example.We.YijianActivity" >
+        </activity>
+        <activity android:name="com.example.main.MainActivity" >
+        </activity>
+        <activity android:name="com.example.Flou.QuyuActivity" >
+        </activity>
+        <activity android:name="com.example.Flou.DetailsActivity" >
+        </activity>
+        <activity android:name="com.example.Flou.XmuActivity" >
+        </activity>
+        <!-- 桑拿 -->
+        <activity android:name="com.example.Snan.SnanActivity" />
+        <activity android:name="com.example.Snan.ProjectActivity" />
+        <activity android:name="com.example.Snan.MyActivity" />
+        <activity android:name="com.example.Snan.HostActivity" />
+        <activity android:name="com.example.Snan.SnaDetailsActivity" />
+        <activity android:name="com.example.Snan.CommentActivity" />
+        <!-- 明星服务 -->
+        <activity android:name="com.example.star.StartActivity" />
+        <!-- 引导 -->
+        <activity android:name="com.example.Log.LoginActivity" />
+        
+        
+        <activity
+            android:name=".ProjectActivity"
+            android:label="@string/title_activity_project" >
+        </activity>
+    </application>
+
+</manifest>

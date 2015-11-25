@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dl"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+ 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sc_02"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gh_03" />
+
+        <TextView
+            android:id="@+id/stoyrName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back_iv"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="店铺名称"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- <com.example.main.viewpage.SlideShowView
+                android:id="@+id/slideshowView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp" >
+            </com.example.main.viewpage.SlideShowView> -->
+            
+            <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="150dp"
+		        >
+		
+		        <android.support.v4.view.ViewPager
+		            android:id="@+id/sna_viewpager"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:cacheColorHint="@android:color/white"
+		            android:divider="@null"
+		            android:fadingEdge="none"
+		            android:listSelector="@android:color/transparent"
+		            android:scrollbars="none" >
+		        </android.support.v4.view.ViewPager>
+		
+		        <LinearLayout
+		            android:id="@+id/ll_point"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_centerInParent="true"
+		            android:layout_marginBottom="10dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal" >
+		        </LinearLayout>
+		    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_project"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sc_02" >
+
+                <ImageView
+                    android:id="@+id/step_one_flge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/gm_08" />
+
+                <TextView
+                    android:id="@+id/step_one_sr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/step_one_flge"
+                    android:gravity="center"
+                    android:text="服务项目"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/jt_03" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_addr"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/sc_02" >
+
+                <ImageView
+                    android:id="@+id/story_addr_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/dizhi" />
+
+                <TextView
+                    android:id="@+id/story_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@+id/story_addr_iv"
+                    android:gravity="center"
+                    android:text="上海市浦东新区"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_activity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:layout_marginTop="5dp"
+                android:background="@drawable/sc_02" >
+
+                <ImageView
+                    android:id="@+id/activity_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/gm_25" />
+
+                <TextView
+                    android:id="@+id/activity_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@+id/activity_iv"
+                    android:gravity="center"
+                    android:text="活动"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/jt_03" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_host"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/sc_02" >
+
+                <ImageView
+                    android:id="@+id/host_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                   android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/mess" />
+
+                <TextView
+                    android:id="@+id/host_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@+id/host_iv"
+                    android:gravity="center"
+                    android:text="店长"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/noHost_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                     android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/host_tv"
+                    android:gravity="center|right"
+                    android:text="该店还没有店长"
+                    android:layout_marginRight="11dp"
+                    android:textColor="#DFDFDF"
+                    android:textSize="12sp" />
+                <Button 
+                    android:id="@+id/host_bt"
+                    android:layout_width="130dp"
+                    android:layout_height="32dp"
+                    android:text="申请成为店长"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/gm_43"
+                    
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_comment"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/sc_02"
+                android:paddingBottom="5dp" >
+
+                <ImageView
+                    android:id="@+id/comment_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yuyue" />
+
+                <TextView
+                    android:id="@+id/comment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/comment_iv"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+               <!--  <TextView
+                    android:id="@+id/nocomment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/comment_tv"
+                    android:gravity="center|right"
+                    android:text="该店还没有店长"
+                    android:textColor="#DFDFDF"
+                    android:textSize="12sp" /> -->
+
+                <Button
+                    android:id="@+id/comment_bt"
+                    android:layout_width="130dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/comment_tv"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/gm_43"
+                    android:text="我要评论"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

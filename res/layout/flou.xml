@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dl"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+         android:background="@drawable/sc_02"
+        >
+
+        <Button
+            android:id="@+id/toptext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:text="凤楼"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:id="@+id/fanhui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|left" >
+
+            <ImageView
+                
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/gh_03" />
+        </FrameLayout>
+
+        <Button
+   
+            android:id="@+id/quyu"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:text="更换区域"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="10dp"
+	        android:gravity="center"
+	        android:text="当前为:"
+	        android:textColor="#FB02A1"
+	        android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海市"
+            android:textColor="#FB02A1"
+	        android:textSize="12sp"
+             />
+
+    </LinearLayout>
+
+
+        <com.example.pulltorefresh.PullToRefreshGridView
+            android:id="@+id/gview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" >
+        </com.example.pulltorefresh.PullToRefreshGridView>
+    
+
+</LinearLayout>
